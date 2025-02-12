@@ -1,0 +1,156 @@
+:root {
+    --fuentePrincipal: "Roboto", serif;
+}
+
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+height: 100%;
+background-image: linear-gradient(to right, #383E53, #CFCED3 ,#7E7D80);
+}
+
+.barra__navegacion, .barra__footer{
+background-color: red;
+display: flex;
+align-items: center;
+justify-content:space-around;
+height: 60px;
+gap: 20px;
+box-shadow: 5px 5px 10px gray;
+}
+
+@media  (max-width: 550px) {
+    .barra__navegacion{
+        background-color: red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        height: 170px;
+        box-shadow: 5px 5px 10px gray;
+        padding: 20px;
+    }   
+}
+
+
+.navegacion__enlace {
+text-decoration: none;
+color: white;
+font-family: var(--fuentePrincipal);
+font-size: 18px;
+}
+.navegacion__enlace:hover{
+    color: orange;
+}
+
+.textoInicio{
+    text-align: center;
+    margin-top: 30px;
+    font-family: var(--fuentePrincipal);
+}
+
+.centrarbtnObtenerUltimosResultados, .centrarbtnObtenerCalendario, .centrarbtnMundialActual{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btnObtenerUltimosResultados, .btnObtenerCalendario, .btnObtenerMundialActualPilotos, .btnObtenerMundialActualConstructores, .btnObtenerPilotosTemporada, .btnObtenerPilotosEscuderia,.btnObtenerPilotosGanadoresMundial, .btnObtenerEscuderiasGanadoresMundial, .btnObtenerCircuitos, .btnObtenerCircuitosTemporada {
+    background-image: linear-gradient(to bottom, blue, black);
+    box-shadow: 0px 0px 10px black;
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btnEliminarUltimosResultados, .btnEliminarCalendario, .btnEliminarMundialActualPilotos, .btnEliminarMundialActualConstructores, .btnEliminarPilotosTemporada, .btnEliminarPilotosEscuderia, .btnEliminarPilotosGanadoresMundial, .btnEliminarEscuderiasGanadoresMundial, .btnEliminarCircuitos, .btnEliminarCircuitosTemporada{
+    background-image: linear-gradient(to bottom, red, black);
+    box-shadow: 0px 0px 10px black;
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ultimosResultados--contenedor, .calendario--contenedor, .MundialPilotosActual--contenedor, .mundialConstructoresActual--contenedor, .pilotosTemporada--contenedor, .pilotosEscuderia--contenedor, .pilotosGanadoresMundial--contenedor, .escuderiasGanadoresMundial--contenedor, .circuitosTemporada--contenedor, .circuitos--contenedor {
+    display: grid;
+    justify-content: center;
+}
+
+.ultimosResultados--contenedor h3{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+}
+
+ul{
+    background-image: linear-gradient(to right, red, black);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 20px black;
+
+}
+.calendario--contenedor ul, .mundialConstructoresActual--contenedor ul{
+    background-image: linear-gradient(to right, blue, black);
+    
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+    font-family: var(--fuentePrincipal);
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.categorias__select{
+    background-image: linear-gradient(to bottom, red, black);
+    box-shadow: 0px 0px 20px black;
+    margin: auto;
+    border: thin solid;
+    border-radius: 10px;
+    max-width: 40%;
+    height: 150px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.form__select {
+    width: 100px;
+}
+
+#temporada, #pilotoEscuderia, #circuitos{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.parrafo {
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+    font-family: var(--fuentePrincipal);
+    line-height: 1.8;
+  }
+  
